@@ -4,7 +4,7 @@ import diagrams.azure.general
 import diagrams.azure.compute
 import diagrams.k8s.group
 
-with Diagram("Bryn_Neil_Azure", direction="TB", show=False):
+with Diagram("SNC_Azure", direction="TB", show=False):
 
     Azure_Subscriptions = diagrams.azure.general.Subscriptions("Azure Subscriptions")
     Azure_Public_IP = diagrams.azure.network.PublicIpAddresses("Azure Public IP")
