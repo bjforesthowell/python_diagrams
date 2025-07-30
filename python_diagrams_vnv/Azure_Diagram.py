@@ -23,15 +23,15 @@ with Diagram("Bryn_Neil_Azure", direction="TB", show=False):
     with Cluster("Azure_SNC_Resource_Group"):
         ghes_azure_appliance = diagrams.azure.compute.VM("GitHub Enterprise Server")
         
-        ghes_storage_disk = diagrams.azure.compute.Disks("Detached Storage Disk")
+        ghes_storage_disk = diagrams.azure.compute.Disks("Detached Storage \n Disk")
         ghes_os_disk = diagrams.azure.compute.Disks("OS Disk")
         ghes_vnic = diagrams.azure.network.NetworkInterfaces("Virtual NIC")
         ghes_nsg = diagrams.azure.network.NetworkSecurityGroupsClassic("Network Security Group")
         
         aks_cluster = diagrams.azure.compute.KubernetesServices("AKS Cluster")
-        jfrog_namespace = diagrams.k8s.group.NS("JFrog Namespace")
-        runner_controller_namespace = diagrams.k8s.group.NS("Runner Controller Namespace")
-        runner_scale_set_namespace = diagrams.k8s.group.NS("Runner Scale Set Namespace")
+        jfrog_namespace = diagrams.k8s.group.NS("JFrog \n Namespace")
+        runner_controller_namespace = diagrams.k8s.group.NS("Runner Controller \n Namespace")
+        runner_scale_set_namespace = diagrams.k8s.group.NS("Runner Scale Set \n Namespace")
         
         name_spaces = [jfrog_namespace, 
                         runner_controller_namespace, 
